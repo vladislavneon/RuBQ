@@ -1,8 +1,26 @@
-# RuBQ
-A Russian data set for question answering over Wikidata
+# RuBQ: Russian Knowledge Base Question Answering Data Set
 
-This work is licensed under a [Creative Commons Attribution 4.0 International
-License][cc-by].
+## Introduction
+
+We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase **Q**uestions, a KBQA dataset that consists of 1,500 Russian questions of varying complexity along with their English machine translations, corresponding SPARQL queries, answers, as well as a subset of Wikidata covering entities with Russian labels. To the best of our knowledge, this is the first Russian KBQA and semantic parsing dataset. The dataset is thought to be used as a development and test sets in cross-lingual transfer, few-shot learning, or  learning with synthetic data scenarios. 
+
+## Download
+
+## Usage
+
+### Format
+
+### Examples
+
+### RuWikidata Sample
+
+### *rdfs:label* and *skos:altLabel* predicates convention
+
+## Evaluation
+
+## Leaderboard
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
