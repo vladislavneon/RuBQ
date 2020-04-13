@@ -8,6 +8,10 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 ## Usage
 
+<!--
+About intended for evaluation not testing 
+-->
+
 ### Format
 
 ### Examples
@@ -21,9 +25,24 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 ### RuWikidata Sample
 
-### *rdfs:label* and *skos:altLabel* predicates convention
+We provide a Wikidata sample containing all the entities with Russian labels. It consists of about 212M triples with 8.1M unique entities. This snapshot mitigates the problem of Wikidata’s dynamics – a reference answer may change with time as the knowledge base evolves. The sample guarantees the correctness of the queries and answers. In addition, the smaller dump makes it easier to conduct experiments with our dataset.
+
+We strongly recommend using this sample for evaluation.
+
+#### Details
+
+Sample is a collection of several RDF files in Turtle.
+
+ - `wdt_all.ttl` contains all the truthy statements.
+ - `names.ttl` contains Russian and English labels and aliases for all entities. Names in other language also provided when needed.
+ - `onto.ttl` contains all Wikidata triples with relation `wdt:P279` - *subclass of*. It represents some class hierarchy, but remember that there is no *class* or *instance* concepts in Wikidata.
+ - `pch_{0,6}.ttl` contain all statetment nodes and their data for all entities.
 
 ## Evaluation
+
+### *rdfs:label* and *skos:altLabel* predicates convention
+
+Some question in our dataset require using *rdfs:label* or *skos:altLabel* for retrieving answer which is a literal. In cases where answer language doesn't have to be inferred from question, our evaluation script takes into account Russian literals only.
 
 ## Leaderboard
 
