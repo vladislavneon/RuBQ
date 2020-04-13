@@ -14,6 +14,8 @@ About intended for evaluation not testing
 
 ### Format
 
+Data set files are presented in JSON format as an array of dictionary entries. See full specifications here.
+
 ### Examples
 
 | Question | Query | Answers | Tags |
