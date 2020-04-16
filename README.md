@@ -8,7 +8,7 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 [Test](RuBQ_test.json) and [Dev](RuBQ_dev.json) subsets
 
-[RuWikidata](https://zenodo.org/record/3751761) sample
+[RuWikidata](http://doi.org/10.5281/zenodo.3751761) sample
 
 ## Usage
 
@@ -18,7 +18,7 @@ About intended for evaluation not testing
 
 ### Format
 
-Data set files are presented in JSON format as an array of dictionary entries. See full specifications here.
+Data set files are presented in JSON format as an array of dictionary entries. See full specifications [here](specification.md).
 
 ### Examples
 
