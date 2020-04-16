@@ -6,6 +6,10 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 ## Download
 
+[Test](RuBQ_test.json) and [Dev](RuBQ_dev.json) subsets
+
+[RuWikidata](https://zenodo.org/record/3751761) sample
+
 ## Usage
 
 <!--
