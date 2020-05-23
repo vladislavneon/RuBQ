@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase **Q**uestions, a KBQA dataset that consists of 1,500 Russian questions of varying complexity along with their English machine translations, corresponding SPARQL queries, answers, as well as a subset of Wikidata covering entities with Russian labels. To the best of our knowledge, this is the first Russian KBQA and semantic parsing dataset. The dataset is thought to be used as a development and test sets in cross-lingual transfer, few-shot learning, or learning with synthetic data scenarios. 
+We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase **Q**uestions, a KBQA dataset that consists of 1,500 Russian questions of varying complexity along with their English machine translations, corresponding SPARQL queries, answers, as well as a subset of Wikidata covering entities with Russian labels. 300 RuBQ questions are unanswerable, which poses a new challenge for KBQA systems and makes the task more realistic. The dataset is based on a collection of quiz questions. The data generation pipeline combines automatic processing, crowdsourced and in-house verification, see details in the paper. To the best of our knowledge, this is the first Russian KBQA and semantic parsing dataset. 
 
 ## Links
 
@@ -16,9 +16,7 @@ Dataset is also published on [Zenodo](http://doi.org/10.5281/zenodo.3835913)
 
 ## Usage
 
-<!--
-About intended for evaluation not testing 
--->
+The dataset is thought to be used as a development and test sets in cross-lingual transfer, few-shot learning, or learning with synthetic data scenarios.
 
 ### Format
 
