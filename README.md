@@ -6,7 +6,9 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 ## Links
 
-[Paper](https://arxiv.org/abs/2005.10659) :page_facing_up:
+[Latest ISWC 2020 paper](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_7) :page_facing_up:
+
+[Older paper on arXiv](https://arxiv.org/abs/2005.10659) :page_facing_up:
 
 [Test](RuBQ_test.json) and [Dev](RuBQ_dev.json) subsets
 
