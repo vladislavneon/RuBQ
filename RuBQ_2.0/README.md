@@ -1,4 +1,4 @@
-# RuBQ: A Russian Knowledge Base Question Answering Data Set
+# RuBQ 2.0: An Innovated Russian Question Answering Dataset
 
 ## Introduction
 
