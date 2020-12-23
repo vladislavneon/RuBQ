@@ -1,4 +1,4 @@
-# RuBQ: A Russian Knowledge Base Question Answering Data Set
+# RuBQ 1.0: A Russian Knowledge Base Question Answering Data Set
 
 ## Introduction
 
@@ -6,11 +6,11 @@ We present **RuBQ** (pronounced \[\`rubik\]) -- **Ru**ssian Knowledge **B**ase *
 
 ## Links
 
-[Latest ISWC 2020 paper](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_7) :page_facing_up:
+[ISWC 2020 paper (newest)](https://link.springer.com/chapter/10.1007/978-3-030-62466-8_7) :page_facing_up:
 
-[Older paper on arXiv](https://arxiv.org/abs/2005.10659) :page_facing_up:
+[arXiv paper](https://arxiv.org/abs/2005.10659) :page_facing_up:
 
-[Test](RuBQ_test.json) and [Dev](RuBQ_dev.json) subsets
+[Test](RuBQ_1.0_test.json) and [Dev](RuBQ_1.0_dev.json) subsets
 
 [RuWikidata](http://doi.org/10.5281/zenodo.3751761) sample
 
@@ -22,7 +22,7 @@ The dataset is thought to be used as a development and test sets in cross-lingua
 
 ### Format
 
-Data set files are presented in JSON format as an array of dictionary entries. See full specifications [here](specification.md).
+Data set files are presented in JSON format as an array of dictionary entries. See full specifications [here](specification_v1.0.md).
 
 ### Examples
 
@@ -59,11 +59,12 @@ Some question in our dataset require using *rdfs:label* or *skos:altLabel* for r
 If you use RuBQ dataset in your work, please cite:
 
 ```
-@article{korablinov2020rubq,
-  title={RuBQ: A Russian Dataset for Question Answering over Wikidata},
+@inproceedings{RuBQ2020,
+  title={{RuBQ}: A {Russian} Dataset for Question Answering over {Wikidata}},
   author={Vladislav Korablinov and Pavel Braslavski},
-  journal={arXiv preprint arXiv:2005.10659},
-  year={2020}
+  booktitle={ISWC},
+  year={2020},
+  pages={97--110}
 }
 ```
 
