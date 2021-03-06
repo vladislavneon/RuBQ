@@ -37,7 +37,7 @@ Inherited from RuBQ 1.0:
 | **Rus**: Какой океан самый маленький? <br><br> **Eng**: Which ocean is the smallest? | <pre>SELECT ?answer <br>WHERE {<br>  ?answer p:P2046/<br>     psn:P2046/<br>     wikibase:quantityAmount ?sq .<br>  ?answer wdt:P31 wd:Q9430 .<br>}<br>ORDER BY ASC(?sq)<br>LIMIT 1</pre> | wd:Q788<br>(Arctic Ocean) | multi-constraint<br><br>reverse<br><br>ranking |
 | **Rus**: Сколько дней продолжалась Курская битва? <br><br> **Eng**: How many days did the battle of Kursk last? | <pre>SELECT ?answer <br>WHERE {<br>  wd:Q130861 wdt:P580 ?begin . <br>  wd:Q130861 wdt:P582 ?end .<br>  BIND (xsd:integer(?end - ?begin + 1) AS ?answer).<br>}</pre> | 50 | duration |
 
-New in RuBQ 2.0, answer names:
+New in RuBQ 2.0, answer names:  
 (lists of Wikidata names may be truncated)
 
 | Question | Answers | WD Label | WD Names | WP Names
@@ -48,7 +48,7 @@ New in RuBQ 2.0, answer names:
 | **Rus**: Какой океан самый маленький? <br><br> **Eng**: Which ocean is the smallest? | wd:Q788 | Северный Ледовитый океан | **Ru**: Северный Ледовитый океан<br> **En**: Northern Ocean,<br>Arctic Ocean,<br>Arctic Sea | Северного Ледовитого океана |
 | **Rus**: Сколько дней продолжалась Курская битва? <br><br> **Eng**: How many days did the battle of Kursk last? | 50 | 50 | **Ru**: -<br> **En**: -| - |
 
-New in RuBQ 2.0, paragraphs:
+New in RuBQ 2.0, paragraphs:  
 (lists of all related paragraphs IDs are truncated)
 
 | Question | Paragraph IDs | The paragraph <br>with answer | A paragraph <br>without answer |
