@@ -13,7 +13,7 @@ Each entry has following fields:
    * `type`: Type of the answer. It's value can be either `uri` or `literal`.
    * `value`: The answer content. It is a entry URI if type is `uri` and a raw string if type is `literal`.
    * `label`: Answer entity Wikidata label, applied if the answer's type is URI.
-   * `wp_names`: A list of answer representations (aliases) found on Wikipedia.
+   * `wp_names`: A list of answer representations (the label and all the aliases) found on Wikipedia.
    * `wd_names`: Two lists (`ru` and `en` for Russian and English respectively) of all the answer entity's Wikidata labels and aliases.
  <br> If type is `literal`, additional fields like `xml:lang` or `datatype` may be presented.
  * `paragraphs_uids`: IDs of the paragraphs related to the question:
