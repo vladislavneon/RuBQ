@@ -18,7 +18,7 @@ Dataset is also published on [Zenodo](https://doi.org/10.5281/zenodo.4345696)
 
 ## Usage
 
-RuBQ 2.0 is suitable for the evaluation of KBQA, MRC, paragrph retrieval, and end-to-end open-domain question answering. 
+RuBQ 2.0 is suitable for the evaluation of KBQA, MRC, paragraph retrieval, and end-to-end open-domain question answering. 
 The dataset is thought to be used primarily for testing rule-based systems, models based on few/zero-shot and transfer learning, as well as models trained on automatically generated examples, similarly to recent MRC datasets. One also can use RuBQ 2.0 as a development and test sets in cross-lingual transfer, few-shot learning, or learning with synthetic data scenarios.
 
 ### Format
@@ -36,6 +36,17 @@ Inherited from RuBQ 1.0:
 | **Rus**: Кто на работе пользуется теодолитом? <br><br> **Eng**: Who uses a theodolite for work? | <pre>SELECT ?answer <br>WHERE {<br>  wd:Q181517 wdt:P366 [<br>    wdt:P3095 ?answer<br>  ] .<br>}</pre> | wd:Q1734662<br> (cartographer)  <br> wd:Q11699606<br> (geodesist) <br> wd:Q294126<br> (land surveyor)  | multi-hop |
 | **Rus**: Какой океан самый маленький? <br><br> **Eng**: Which ocean is the smallest? | <pre>SELECT ?answer <br>WHERE {<br>  ?answer p:P2046/<br>     psn:P2046/<br>     wikibase:quantityAmount ?sq .<br>  ?answer wdt:P31 wd:Q9430 .<br>}<br>ORDER BY ASC(?sq)<br>LIMIT 1</pre> | wd:Q788<br>(Arctic Ocean) | multi-constraint<br><br>reverse<br><br>ranking |
 | **Rus**: Сколько дней продолжалась Курская битва? <br><br> **Eng**: How many days did the battle of Kursk last? | <pre>SELECT ?answer <br>WHERE {<br>  wd:Q130861 wdt:P580 ?begin . <br>  wd:Q130861 wdt:P582 ?end .<br>  BIND (xsd:integer(?end - ?begin + 1) AS ?answer).<br>}</pre> | 50 | duration |
+
+New in RuBQ 2.0, answer names:
+(lists of Wikidata names may be truncated)
+
+| Question | Answers | WD Label | WD Names | WP Names
+| :--- | :--- | :--- | :----- | :--- |
+| **Rus**: Кто написал роман «Хижина дяди Тома»? <br><br> **Eng**: Who wrote the novel "Uncle Tom's Cabin"? |  wd:Q102513 | Гарриет Бичер-Стоу | **Ru**: Стоу Гарриет Бичер,<br>Бичер-Стоу Гарриет,<br>Гарриет Бичер-Стоу,<br>Бичер Стоу,<br>...<br> **En**: Christopher Crowfield,<br>Harriet Elizabeth Beecher Stowe,<br>Enrieta Elizabeth Beecher Stowe,<br>Harriet Beecher Stowe | Гарриет Бичер-Стоу |
+| **Rus**: Кто сыграл князя Андрея Болконского в фильме С. Ф. Бондарчука «Война и мир»? <br><br> **Eng**: Who played Prince Andrei Bolkonsky in S. F. Bondarchuk's film "War and peace"? | wd:Q312483 | Вячеслав Васильевич Тихонов | **Ru**: Тихонов, Вячеслав,<br>Вячеслав Тихонов,<br>Тихонов Вячеслав Васильевич,<br>Вячеслав Васильевич Тихонов,<br>...<br> **En**: Vyacheslav Tikhonov | Вячеслав Васильевич Тихонов |
+| **Rus**: Кто на работе пользуется теодолитом? <br><br> **Eng**: Who uses a theodolite for work? | wd:Q1734662<br><br><br><br> wd:Q11699606<br><br><br> wd:Q294126<br><br><br> | картограф<br><br><br><br>инженер-геодезист<br><br><br>землемер<br><br><br> | **Ru**: картограф<br> **En**: map maker,<br>mapmaker,<br>cartographer<br> **Ru**: инженер-геодезист<br> **En**: geodesist<br> **Ru**: землемер<br> **En**: surveyor,<br>land surveyor | - |
+| **Rus**: Какой океан самый маленький? <br><br> **Eng**: Which ocean is the smallest? | wd:Q788 | Северный Ледовитый океан | **Ru**: Северный Ледовитый океан<br> **En**: Northern Ocean,<br>Arctic Ocean,<br>Arctic Sea | Северного Ледовитого океана |
+| **Rus**: Сколько дней продолжалась Курская битва? <br><br> **Eng**: How many days did the battle of Kursk last? | 50 | 50 | **Ru**: -<br> **En**: -| - |
 
 New in RuBQ 2.0, paragraphs:
 (lists of all related paragraphs IDs are truncated)
