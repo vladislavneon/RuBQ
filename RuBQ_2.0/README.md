@@ -6,6 +6,8 @@ We present the second version of RuBQ. The dataset extension is based on questio
 
 ## Links
 
+[ESWC 2020 paper](https://link.springer.com/chapter/10.1007/978-3-030-77385-4_32) :page_facing_up:
+
 [Paper discussion at OpenReview](https://openreview.net/forum?id=P5UQFFoQ4PJ) :page_facing_up:
 
 [Test](RuBQ_2.0_test.json) and [Dev](RuBQ_2.0_dev.json) subsets
@@ -58,18 +60,19 @@ Sample is a collection of several RDF files in Turtle.
 
 Some question in our dataset require using *rdfs:label* or *skos:altLabel* for retrieving answer which is a literal. In cases where answer language doesn't have to be inferred from question, our evaluation script takes into account Russian literals only. -->
 
-<!-- ## Reference
+## Reference
 
 If you use RuBQ dataset in your work, please cite:
 
 ```
-@article{korablinov2020rubq,
-  title={RuBQ: A Russian Dataset for Question Answering over Wikidata},
-  author={Vladislav Korablinov and Pavel Braslavski},
-  journal={arXiv preprint arXiv:2005.10659},
-  year={2020}
+@inproceedings{RuBQ2021,
+  title={{RuBQ} 2.0: An Innovated {Russian} Question Answering Dataset},
+  author={Ivan Rybin and Vladislav Korablinov and Pavel Efimov and Pavel Braslavski},
+  booktitle={ESWC},
+  year={2021},
+  pages={532--547}
 }
-``` -->
+```
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0
 International License][cc-by-sa].
